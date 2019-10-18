@@ -4,7 +4,9 @@ public class triangle extends shape
 {
 	private double base;
 	private double altura;
-	
+	public double area;
+	private  double perimetro;
+	protected String name;
 	
 	
 	
@@ -24,6 +26,12 @@ public class triangle extends shape
 	public double area( double base, double altura)
 	{
 		return (base*altura)/2;
+	}
+	public double perimetro()
+	{
+		this.perimetro =Math.sqrt(Math.pow(base,2)+Math.pow(altura, 2));
+		this.name="default"; 
+		return 0;
 	}
 	public double perimetro ( double base, double perimetro, double hipotenusa)
 	{
@@ -48,6 +56,12 @@ public class triangle extends shape
 	public void setAltura(double altura)
 	{
 		this.altura = altura;
+	}
+
+	@Override
+	public void Dosomething() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
